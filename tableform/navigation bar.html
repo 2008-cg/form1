@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="dropdown">
+    
+
+    <button></button>
+    <button></button>
+    <button></button>
+
+   <nav class="content">
+    
+        <li>Physics</li>
+        <li>Chemistry</li>
+        <li>Biology</li>
+        <li>Maths</li>
+        <li>English</li>
+    
+   </nav>
+</div>
+
+</body>
+
+<style>
+
+    body {
+        display: flex;
+        justify-content: center;
+    }
+   .content {
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    color: black;
+    position: absolute;
+    padding: 1px;
+    text-align: center;
+    font-size: 2em;
+    display: none; 
+    margin-top: 30px;
+    position: absolute;
+   }
+
+   .content li {
+    list-style-type: none;
+   }
+
+   .content li:hover {
+    background-color: hsl(0, 6%, 62%);
+   }
+
+   button {
+    width: 25px;
+    height: 5px;
+    background-color: black;
+    border-radius: 5px;
+   }
+   .dropdown {
+    border: 1px solid;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    padding: 5px;
+   }
+.dropdown:hover .content {
+    display: block;
+}
+   
+</style>
+</html>
